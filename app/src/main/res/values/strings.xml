@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Luxury_Brands</string>
+    <string name="successfully_logged_in" />
+    <string name="women">Women</string>
+    <string name="shoes">Shoes</string>
+    <string name="view_all">View All</string>
+    <string name="accessories">Accessories</string>
+    <string name="men">Men</string>
+    <string name="err_fields_empty" />
+</resources>

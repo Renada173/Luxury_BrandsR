@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPageActivity">
+
+    <TextView
+        android:onClick="goToViewAllPage"
+        android:id="@+id/ViewAllbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="26dp"
+        android:text="@string/view_all"
+        android:textColor="#151414"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toStartOf="@+id/Shoesbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:onClick="goToAccessPage"
+        android:id="@+id/Accessbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/accessories"
+        android:textColor="#151414"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Womenbtn"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:onClick="goToWomenPage"
+        android:id="@+id/Womenbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/women"
+        android:textColor="#151414"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/Accessbtn"
+        app:layout_constraintStart_toEndOf="@+id/Menbtn"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:onClick="goToShoesPage"
+        android:id="@+id/Shoesbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/shoes"
+        android:textColor="#151414"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toStartOf="@+id/Menbtn"
+        app:layout_constraintStart_toEndOf="@+id/ViewAllbtn"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="189dp"
+        android:layout_height="81dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/Womenbtn"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:onClick="goToMenPage"
+        android:id="@+id/Menbtn"
+        android:layout_width="37dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/men"
+        android:textColor="#151414"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/Shoesbtn"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="78dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/Accessbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cart"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/ViewAllbtn"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/searchbtnimg"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="127dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/Womenbtn"
+        app:srcCompat="@drawable/acceviewallmen" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="131dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/Accessbtn"
+        app:srcCompat="@drawable/acceviewallmen2" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="127dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ViewAllbtn"
+        app:srcCompat="@drawable/acceviewallwomen" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="131dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@drawable/acceviewallwomen2" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="130dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView13"
+        app:layout_constraintEnd_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/shoviewallmen" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="126dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/shoviewallmen2" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="128dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView15"
+        app:layout_constraintEnd_toStartOf="@+id/imageView13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/shoviewallwomen" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="131dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView14"
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/shoviewallwomen2" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="122dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:srcCompat="@drawable/clothMenViewAll2" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="124dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:srcCompat="@drawable/clothmenviewall" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="133dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView17"
+        app:layout_constraintStart_toEndOf="@+id/imageView15"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:srcCompat="@drawable/clothWomenViewAll" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="123dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14"
+        app:srcCompat="@drawable/clothwomenviewall2"
+        android:contentDescription="TODO" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
